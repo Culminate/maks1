@@ -25,3 +25,21 @@ nav li a{
 	font-size: 20pt;
 	padding: 15px 15px 15px 0 !important;
 }
+.sec1{
+	background-image: url('../img/Background1.png');
+	background-position: 50% 50%;
+}
+.sec1 .col-xs-6{
+	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form{
+	height: 300px;
+	
+}
+.head{
+	height: 100px;
+	background-color: #009032;
+}
