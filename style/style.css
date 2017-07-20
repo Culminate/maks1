@@ -1,0 +1,27 @@
+.logo{
+	margin: 10px 0 0 0;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 24pt;
+	font-weight: bold;
+}
+.reqcall{
+	margin: 10px 0 0 0;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 24pt;
+	color: #008f32;
+	font-weight: bold;
+}
+.logophone{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 26pt;
+	font-weight: bold;
+}
+nav{
+	margin: 0 !important;
+}
+nav li a{
+	color: #767676;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20pt;
+	padding: 15px 15px 15px 0 !important;
+}

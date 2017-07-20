@@ -10,6 +10,8 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
+font-awesome-4.7.0
+
 /.htaccess
 /license.txt
 /readme.html
