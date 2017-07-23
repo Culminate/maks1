@@ -29,7 +29,7 @@ nav li a{
 	padding: 15px 15px 15px 0 !important;
 }
 .sec1{
-	background-image: url('../img/Background1.png');
+	background-image: url('../img/background1.png');
 	background-position: 50% 50%;
 }
 .sec1 .left{
@@ -140,7 +140,7 @@ nav li a{
 	font-size: 18pt;
 }
 .sec3{
-	background-image: url('../img/Background2.png');
+	background-image: url('../img/background2.png');
 	background-position: 50% 30%;
 	min-height: 500px;
 }
@@ -184,7 +184,7 @@ nav li a{
 	max-width: 970px;
 }
 .sec5{
-	background-image: url('../img/Background3.png');
+	background-image: url('../img/background3.png');
 	background-position: 50% 30%;
 }
 .sec5 img{
@@ -192,7 +192,7 @@ nav li a{
 }
 .sec6{
 	min-height: 400px;
-	background-image: url('../img/Background4.png');
+	background-image: url('../img/background4.png');
 	background-position: 50% 50%;
 }
 .sec6 .share{
