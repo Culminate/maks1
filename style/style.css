@@ -1,3 +1,6 @@
+section{
+	padding-bottom: 25px;
+}
 .logo{
 	margin: 10px 0 0 0;
 	font-family: 'Cuprum', sans-serif;
@@ -13,7 +16,7 @@
 }
 .logophone{
 	font-family: 'Cuprum', sans-serif;
-	font-size: 26pt;
+	font-size: 25pt;
 	font-weight: bold;
 }
 nav{
@@ -29,17 +32,236 @@ nav li a{
 	background-image: url('../img/Background1.png');
 	background-position: 50% 50%;
 }
-.sec1 .col-xs-6{
-	height: 600px;
+.sec1 .left{
+	min-height: 600px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .form{
-	height: 300px;
-	
+	width: 300px;
+	background-color: rgba(255,255,255,0.8);
 }
 .head{
 	height: 100px;
 	background-color: #009032;
+}
+.headtext{
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 24pt;
+}
+.content{
+	padding: 15px;
+}
+.contenttext{
+	color: #767676;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12pt;
+
+}
+.sec1text{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 46pt;
+	font-weight: bold;
+	color: #fff;
+	margin: 50px 0;
+	text-shadow:
+		2px 3px 5px rgba(0, 0, 0, 0.8),
+		-0   -1px 1px #888888,
+		 0   -1px 1px #888888,
+		-0    1px 1px #888888,
+		 0    1px 1px #888888,
+		-1px -0   1px #888888,
+		 1px -0   1px #888888,
+		-1px  0   1px #888888,
+		 1px  0   1px #888888,
+		-1px -1px 1px #888888,
+		 1px -1px 1px #888888,
+		-1px  1px 1px #888888,
+		 1px  1px 1px #888888,
+		-1px -1px 1px #888888,
+		 1px -1px 1px #888888,
+		-1px  1px 1px #888888,
+		 1px  1px 1px #888888;
+}
+.form button{
+	background-color: #009032;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12pt;
+	border-radius: 15px;
+	padding: 6px 12px 8px 12px;
+}
+
+.sec2{
+	background-color: #177ddd;
+}
+.sectitle{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 45pt;
+	color: #fff;
+	margin: 25px;
+	text-shadow: 2px 2px 1px #000;
+}
+.circle{
+	height: 146px;
+	width: 146px;
+	background-color: #177ddd;
+	position: absolute;
+	z-index: 3;
+	margin: 2px 0 0 0;
+	border-radius: 73px;
+	padding: 25px;
+}
+.circle2{
+	height: 150px;
+	width: 150px;
+	background-color: #fff;
+	z-index: 1;
+	border-radius: 75px;
+}
+.circle3{
+	height: 50px;
+	width: 50px;
+	background-color: #177ddd;
+	position: absolute;
+	margin-left: 60px;
+	z-index: 2;
+	box-shadow: 0 0 10px 10px #177ddd;
+}
+.sec2col .row{
+	display: flex;
+	justify-content: center;
+}
+.sec2text{
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18pt;
+}
+.sec3{
+	background-image: url('../img/Background2.png');
+	background-position: 50% 30%;
+	min-height: 500px;
+}
+.sec3 img{
+	width: 80px;
+}
+.sec3 .sec3col{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.texttab{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 20pt;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+	margin: 0 0 0 10px;
+}
+.sec3 .sec3row{
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+}
+.sec4 .sectitle{
+	color: #009032;
+}
+.sec4 .secbutton>a{
+	width: 200px;
+	background-color: #009032;
+	border-radius: 30px;
+}
+.sec4 .secbutton p{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 20pt;
+	color: #fff;
+	margin: 0;
+	padding: 10px 0;
+}
+.sec4 img{
+	padding: 0 0 25px 0;
+	max-width: 970px;
+}
+.sec5{
+	background-image: url('../img/Background3.png');
+	background-position: 50% 30%;
+}
+.sec5 img{
+	max-height: 500px;
+}
+.sec6{
+	min-height: 400px;
+	background-image: url('../img/Background4.png');
+	background-position: 50% 50%;
+}
+.sec6 .share{
+	display: flex;
+	padding: 30px 0;
+}
+.sec6 .share a{
+	margin: 2px;
+	height: 50px;
+	width: 50px;
+}
+.sec6 .contact{
+	display: flex;
+	align-items: center;
+	margin: 15px 0;
+}
+.sec6 .contact p{
+	margin: 0 0 0 5px;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 24pt;
+}
+.sec6 .contact img{
+	height: 50px;
+	width: 50px;
+}
+.sec6 form{
+	margin-top: 30px;
+}
+.sec6 form .lineinput>div:first-child{
+	padding-right: 5px;
+}
+.sec6 form .lineinput>div:last-child{
+	padding-left: 5px;
+}
+.sec6 form .formlabel{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 24pt;
+}
+.sec6 form textarea{
+	margin: 10px 0;
+}
+.sec6 form input, .sec6 form textarea, .sec6 form button{
+	background-color: rgba(0, 144, 50, 0.8);
+	color: #fff;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 18pt;
+}
+.sec6 form ::-webkit-input-placeholder{
+	color: #fff;
+}
+.sec6 form ::-moz-placeholder{
+	color: #fff;
+}
+.sec6 form :-moz-placeholder{
+	color: #fff;
+}
+.sec6 form :-ms-input-placeholder{
+	color: #fff;
+}
+
+footer{
+	height: 100px;
+	background-color: #009032;
+	display: flex !important;
+	align-items: center;
+}
+footer p{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 28pt;
+	color: #000;
+	margin: 0;
 }

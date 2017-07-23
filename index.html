@@ -11,7 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="libs/js/load.js"></script>
 	<link rel="stylesheet" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Cuprum|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="container-fluid">
@@ -45,29 +45,196 @@
 		<section class="sec1 container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-5 left">
 						<div class="form">
 							<div class="head">
-								<p class="headtext">
-									Отправьте заявку и получите:
+								<p class="headtext text-center">
+									отправьте заявку и получите:
 								</p>
 							</div>
-							<div class="content">
+							<div class="content clearfix">
 								<p class="contenttext">
 									Подбор участников по вашему желанию <br> бесплатную консультацию
 								</p>
+								<form>
+								  <div class="form-group">
+								    <input type="text" class="form-control" id="InputName" placeholder="введите ваше имя">
+								  </div>
+								  <div class="form-group">
+								    <input type="text" class="form-control" id="InputPhone" placeholder="ваш телефон">
+								  </div>
+								  <button formaction="#" formmethod="post" type="submit" class="btn pull-right">отправить</button>
+								</form>
 							</div>
 						</div>
 					</div>
+					<div class="col-xs-7">
+						<p class="sec1text text-right">
+							СДЕЛАЙТЕ ВАШ ДОМ МЕЧТЫ РЕАЛЬНЫМ!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sec2 container-fluid">
+			<div class="container">
+				<div class="row">
+					<p class="sectitle">О ПОСЁЛКЕ</p>
+				</div>
+				<div class="row">
+					<div class="col-xs-3 sec2col">
+						<div class="row">
+							<div class="circle">
+								<img src="/img/broom.png" class="img-responsive">
+							</div>
+							<div class="circle2"></div>
+							<div class="circle3"></div>
+						</div>
+						<div class="row">
+							<p class="sec2text text-center">Дейтвует собственная служба коммунального сервиса: уборка территории, вывоз мусора</p>
+						</div>
+					</div>
+					<div class="col-xs-3 sec2col">
+						<div class="row">
+							<div class="circle">
+								<img src="/img/police.png" class="img-responsive">
+							</div>
+							<div class="circle2"></div>
+							<div class="circle3"></div>
+						</div>
+						<div class="row">
+							<p class="sec2text text-center">Посёлок охраняется 24 часа</p>
+						</div>
+					</div>
+					<div class="col-xs-3 sec2col">
+						<div class="row">
+							<div class="circle">
+								<img src="/img/road.png" class="img-responsive">
+							</div>
+							<div class="circle2"></div>
+							<div class="circle3"></div>
+						</div>
+						<div class="row">
+							<p class="sec2text text-center">Проведены дороги от участков до трассы</p>
+						</div>
+					</div>
+					<div class="col-xs-3 sec2col">
+						<div class="row">
+							<div class="circle">
+								<img src="/img/fire.png" class="img-responsive">
+							</div>
+							<div class="circle2"></div>
+							<div class="circle3"></div>
+						</div>
+						<div class="row">
+							<p class="sec2text text-center">Все коммуникации (свет,газ,вода)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sec3 container-fluid">
+			<div class="container">
+				<div class="row">
+					<p class="sectitle">ПОЧЕМУ ВЫГОДНО <br>ПОКУПАТЬ У НАС?</p>
+				</div>
+				<div class="row sec3row">
+					<div class="col-xs-6 sec3col">
+						<img src="img/hause.png" class="img-responsive">
+						<p class="texttab">БОЛЬШОЙ ВЫБОР УЧАСТКОВ</p>
+					</div>
+					<div class="col-xs-6 sec3col">
+						<img src="img/docs.png" class="img-responsive">
+						<p class="texttab">ВСЕ УЧАСТКИ С ДОГОВОРОМ ОТ СОБСТВЕННИКА</p>
+					</div>
+				</div>
+				<div class="row sec3row">
+					<div class="col-xs-6 sec3col">
+						<img src="img/handshake.png" class="img-responsive">
+						<p class="texttab">ВЫЕЗД НА ОБЬЕКТЫ В СОПРОВОЖДЕНИИ НАШИХ СПЕЦИАЛИСТОВ</p>
+					</div>
+					<div class="col-xs-6 sec3col">
+						<img src="img/handshake.png" class="img-responsive">
+						<p class="texttab">ПОМОЩЬ В ВЫБОРЕ ПОДРЯДЧИКА ДЛЯ РЕМОНТА</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sec4 container-fluid">
+			<div class="container">
+				<div class="row">
+					<p class="sectitle">КАК ОФОРМИТЬ ПОКУПКУ</p>
+				</div>
+				<div class="row">
+					<img src="img/sec4.png" alt="" class="img-responsive center-block">
+				</div>
+				<div class="row secbutton">
+					<a href="" class="center-block"><p class="text-center">заказать звонок</p></a>
+				</div>
+			</div>
+		</section>
+		<section class="sec5 container-fluid">
+			<div class="container">
+				<div class="row">
+					<p class="sectitle">КАРТА ПОСЁЛКА</p>
+				</div>
+				<div class="row">
+					<img src="img/poselok.png" alt="карта посёлка" class="img-responsive center-block">
+				</div>
+			</div>
+		</section>
+		<section class="sec6 container-fluid">
+			<div class="container">
+				<div class="row">
 					<div class="col-xs-6">
-						
+						<div class="share">
+							<a href="#"><img src="img/share5.png" alt="" class="img-responsive"></a>
+							<a href="#"><img src="img/share4.png" alt="" class="img-responsive"></a>
+							<a href="#"><img src="img/share3.png" alt="" class="img-responsive"></a>
+							<a href="#"><img src="img/share2.png" alt="" class="img-responsive"></a>
+							<a href="#"><img src="img/share1.png" alt="" class="img-responsive"></a>
+						</div>
+						<div class="contact">
+							<img src="img/phone.png" alt="" class="img-responsive">
+							<p>+7 917 347 50 02</p>
+						</div>
+						<div class="contact">
+							<img src="img/adr.png" alt="" class="img-responsive">
+							<p>Г.МОСКВА КРАСНАЯ ПЛОЩАДЬ</p>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<form>
+							<p class="formlabel text-center">ЗАДАТЬ ВОПРОС</p>
+							<div class="form-group row lineinput">
+								<div class="col-xs-6">
+									<input type="tel" class="form-control" id="inputphone" placeholder="телефон">
+								</div>
+								<div class="col-xs-6">
+									<input type="text" class="form-control" id="inputemail" placeholder="имя">
+								</div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" placeholder="ваш вопрос" rows="4"></textarea>
+							</div>
+							<button formaction="#" formmethod="post" type="submit" class="btn pull-right">отправить</button>
+						</form>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="container-fluid">
-		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-7">
+					<p>© Все права защищены</p>
+				</div>
+				<div class="col-xs-5">
+					<p class="pull-right">веб студия 8bit</p>
+				</div>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
