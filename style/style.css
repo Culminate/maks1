@@ -1,3 +1,6 @@
+body{
+	min-width: 770px;
+}
 section{
 	padding-bottom: 25px;
 }
@@ -18,6 +21,14 @@ section{
 	font-family: 'Cuprum', sans-serif;
 	font-size: 25pt;
 	font-weight: bold;
+	margin: 0;
+}
+.navbar-nav, .navbar-nav>li{
+	margin: 0 !important;
+	float: left;
+}
+.navbar{
+	border-radius: 4px;
 }
 nav{
 	margin: 0 !important;
@@ -25,8 +36,8 @@ nav{
 nav li a{
 	color: #767676;
 	font-family: 'Oswald', sans-serif;
-	font-size: 20pt;
-	padding: 15px 15px 15px 0 !important;
+	font-size: 18pt;
+	padding: 15px 5px 15px 5px !important;
 }
 .sec1{
 	background-image: url('../img/background1.png');
@@ -181,6 +192,7 @@ nav li a{
 }
 .sec4 img{
 	padding: 0 0 25px 0;
+	width: 100%;
 	max-width: 970px;
 }
 .sec5{
@@ -254,14 +266,11 @@ nav li a{
 }
 
 footer{
-	height: 100px;
 	background-color: #009032;
-	display: flex !important;
-	align-items: center;
 }
 footer p{
 	font-family: 'Cuprum', sans-serif;
 	font-size: 28pt;
 	color: #000;
-	margin: 0;
+	margin: 15px 0;
 }
