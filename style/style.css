@@ -145,10 +145,19 @@ nav li a{
 	display: flex;
 	justify-content: center;
 }
-.sec2text{
-	color: #000;
-	font-family: 'Oswald', sans-serif;
+.sec2text p{
+	color: #fff;
+	font-family: 'Cuprum', sans-serif;
 	font-size: 18pt;
+}
+.sec2 .sectitle{
+	margin-left: 0;
+	text-shadow: none;
+}
+.sec2 img{
+	height: 150px;
+	width: 150px;
+	padding: 10px;
 }
 .sec3{
 	background-image: url('../img/background2.png');
@@ -206,6 +215,12 @@ nav li a{
 	min-height: 400px;
 	background-image: url('../img/background4.png');
 	background-position: 50% 50%;
+}
+.sec6 .sectitle{
+	font-size: 36pt;
+	margin-bottom: 0px;
+	color: #000;
+	text-shadow: 2px 2px 1px #fff;
 }
 .sec6 .share{
 	display: flex;
