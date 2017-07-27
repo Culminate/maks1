@@ -2,7 +2,7 @@ body{
 	min-width: 770px;
 }
 section{
-	padding-bottom: 25px;
+	padding: 25px 15px;
 }
 header img{
 	position: absolute;
@@ -213,6 +213,148 @@ nav li a{
 }
 .sec5 img{
 	max-height: 500px;
+}
+.sec5 .num{
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+	margin: -15px 0 0 -15px;
+	overflow: visible;
+}
+.sec5 .num .number{
+	font-family: 'Cuprum', sans-serif;
+	font-size: 20pt;
+	color: #000;
+	margin: 0;
+	text-align: center;
+}
+.stat1 .number{
+	text-shadow: 
+		-0   -2px 2px #FFD400,
+		 0   -2px 2px #FFD400,
+		-0    2px 2px #FFD400,
+		 0    2px 2px #FFD400,
+		-2px -0   2px #FFD400,
+		 2px -0   2px #FFD400,
+		-2px  0   2px #FFD400,
+		 2px  0   2px #FFD400,
+		-1px -2px 2px #FFD400,
+		 1px -2px 2px #FFD400,
+		-1px  2px 2px #FFD400,
+		 1px  2px 2px #FFD400,
+		-2px -1px 2px #FFD400,
+		 2px -1px 2px #FFD400,
+		-2px  1px 2px #FFD400,
+		 2px  1px 2px #FFD400,
+		-2px -2px 2px #FFD400,
+		 2px -2px 2px #FFD400,
+		-2px  2px 2px #FFD400,
+		 2px  2px 2px #FFD400,
+		-2px -2px 2px #FFD400,
+		 2px -2px 2px #FFD400,
+		-2px  2px 2px #FFD400,
+		 2px  2px 2px #FFD400;
+}
+.stat2 .number{
+	text-shadow: 
+		-0   -2px 2px #13AA00,
+		 0   -2px 2px #13AA00,
+		-0    2px 2px #13AA00,
+		 0    2px 2px #13AA00,
+		-2px -0   2px #13AA00,
+		 2px -0   2px #13AA00,
+		-2px  0   2px #13AA00,
+		 2px  0   2px #13AA00,
+		-1px -2px 2px #13AA00,
+		 1px -2px 2px #13AA00,
+		-1px  2px 2px #13AA00,
+		 1px  2px 2px #13AA00,
+		-2px -1px 2px #13AA00,
+		 2px -1px 2px #13AA00,
+		-2px  1px 2px #13AA00,
+		 2px  1px 2px #13AA00,
+		-2px -2px 2px #13AA00,
+		 2px -2px 2px #13AA00,
+		-2px  2px 2px #13AA00,
+		 2px  2px 2px #13AA00,
+		-2px -2px 2px #13AA00,
+		 2px -2px 2px #13AA00,
+		-2px  2px 2px #13AA00,
+		 2px  2px 2px #13AA00;
+}
+
+.stat3 .number{
+	text-shadow: 
+		-0   -2px 2px #DB0000,
+		 0   -2px 2px #DB0000,
+		-0    2px 2px #DB0000,
+		 0    2px 2px #DB0000,
+		-2px -0   2px #DB0000,
+		 2px -0   2px #DB0000,
+		-2px  0   2px #DB0000,
+		 2px  0   2px #DB0000,
+		-1px -2px 2px #DB0000,
+		 1px -2px 2px #DB0000,
+		-1px  2px 2px #DB0000,
+		 1px  2px 2px #DB0000,
+		-2px -1px 2px #DB0000,
+		 2px -1px 2px #DB0000,
+		-2px  1px 2px #DB0000,
+		 2px  1px 2px #DB0000,
+		-2px -2px 2px #DB0000,
+		 2px -2px 2px #DB0000,
+		-2px  2px 2px #DB0000,
+		 2px  2px 2px #DB0000,
+		-2px -2px 2px #DB0000,
+		 2px -2px 2px #DB0000,
+		-2px  2px 2px #DB0000,
+		 2px  2px 2px #DB0000;
+}
+
+.sec5 .sec5tool{
+	width: 220px;
+	height: 100px;
+	background-color: #fff;
+	display: none;
+	margin: 7px 0 0 -95px;
+}
+.sec5 .sec5tool:before{
+	content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 8px;
+    top: 23px;
+    border-width: 7px 7px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.sec5 .num:hover .sec5tool{
+	display: block;
+}
+.sec5tool .nums{
+	background-color: yellow;
+	float: left;
+	line-height: 30px;
+	width: 40px;
+	text-align: center;
+}
+.stat2 .nums{
+	background-color: #13AA00;
+}
+
+.stat3 .nums{
+	background-color: red;
+}
+.sec5tool .bron{
+	padding: 0 10px;
+	margin-left: 40px;
+}
+.sec5tool .info>p{
+	margin: 0 5px;
+	line-height: 20px;
 }
 .sec6{
 	min-height: 400px;

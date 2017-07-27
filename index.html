@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>maks1</title>
+	<title>SunnyGlade</title>
 	<meta charset="utf-8" />
 	<meta name="language" content="ru">
-	<meta name="keywords" content="maks1">
-	<meta name="description" content="maks1">
+	<meta name="keywords" content="SunnyGlade Sunny Glade поселок посёлок москва">
+	<meta name="description" content="небольшой, уютный поселок на 22 участка.
+Находится в 80 км от Москвы, рядом с деревней Калянино, Ступинского района, Московской области.">
 	<meta name="viewport" content="width=240, initial-scale=0.7">
 
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="	sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
 	<header class="container-fluid">
@@ -54,14 +56,14 @@
 								<p class="contenttext">
 									Подбор участников по вашему желанию <br> бесплатную консультацию
 								</p>
-								<form>
+								<form id="feedback1" action="feedback.php" method="POST" name="feedback1">
 								  <div class="form-group">
-								    <input type="text" class="form-control" id="InputName" placeholder="введите ваше имя">
+								    <input type="text" class="form-control" id="InputName" maxlength="30" placeholder="введите ваше имя" required />
 								  </div>
 								  <div class="form-group">
-								    <input type="text" class="form-control" id="InputPhone" placeholder="ваш телефон">
+								    <input type="text" class="form-control" id="InputPhone" maxlength="14" placeholder="ваш телефон" required />
 								  </div>
-								  <button formaction="#" formmethod="post" type="submit" class="btn pull-right">отправить</button>
+								  <button type="submit" class="btn pull-right">отправить</button>
 								</form>
 							</div>
 						</div>
@@ -142,7 +144,277 @@
 					<p class="sectitle">КАРТА ПОСЁЛКА</p>
 				</div>
 				<div class="row">
-					<img src="img/poselok.png" alt="карта посёлка" class="img-responsive center-block">
+					<div style="position: relative;">
+						<img src="img/poselok.png" alt="карта посёлка" class="img-responsive center-block">
+						<div class="num stat1" style="left: 90%; top: 22%;">
+							<p class="number">1</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 1</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat1" style="left: 79%; top: 22%;">
+							<p class="number">2</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 2</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat1" style="left: 68%; top: 22%;">
+							<p class="number">3</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 3</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat1" style="left: 57%; top: 22%;">
+							<p class="number">4</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 4</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat1" style="left: 46%; top: 22%;">
+							<p class="number">5</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 5</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat1" style="left: 35%; top: 22%;">
+							<p class="number">6</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 6</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat1" style="left: 24%; top: 22%;">
+							<p class="number">7</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 7</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat1" style="left: 13%; top: 22%;">
+							<p class="number">8</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 8</strong></div>
+								<div class="bron"><strong>Забронирован</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 7%; top: 78%;">
+							<p class="number">9</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 9</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="num stat2" style="left: 12%; top: 78%;">
+							<p class="number">10</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 10</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 16%; top: 78%;">
+							<p class="number">11</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 11</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 22%; top: 78%;">
+							<p class="number">12</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 12</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 28%; top: 78%;">
+							<p class="number">13</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 13</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 34%; top: 78%;">
+							<p class="number">14</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 14</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 39%; top: 78%;">
+							<p class="number">15</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 15</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 44%; top: 78%;">
+							<p class="number">16</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 16</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 50%; top: 78%;">
+							<p class="number">17</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 17</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 55%; top: 78%;">
+							<p class="number">18</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 18</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat3" style="left: 60%; top: 78%;">
+							<p class="number">19</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 19</strong></div>
+								<div class="bron"><strong>Продан</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 65%; top: 78%;">
+							<p class="number">20</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 20</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 72%; top: 78%;">
+							<p class="number">21</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 21</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="num stat2" style="left: 77%; top: 78%;">
+							<p class="number">22</p>
+							<div class="sec5tool">
+								<div class="nums"><strong>№ 22</strong></div>
+								<div class="bron"><strong>Свободен</strong></div>
+								<div class="info">
+									<p>Площадь участка: <strong>15 сот.</strong></p>
+									<p>Площадь дома: <strong>0 м<sup>2</sup></strong></p>
+									<p>Стоимость: <strong>500000 р.</strong></p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
