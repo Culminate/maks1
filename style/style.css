@@ -4,11 +4,13 @@ body{
 section{
 	padding-bottom: 25px;
 }
+header img{
+	position: absolute;
+	max-height: 150px;
+}
 .logo{
-	margin: 10px 0 0 0;
-	font-family: 'Cuprum', sans-serif;
-	font-size: 24pt;
-	font-weight: bold;
+	height: 120px;
+	width: 100%;
 }
 .reqcall{
 	margin: 10px 0 0 0;
@@ -22,6 +24,7 @@ section{
 	font-size: 25pt;
 	font-weight: bold;
 	margin: 0;
+	display: inline-block;
 }
 .navbar-nav, .navbar-nav>li{
 	margin: 0 !important;
