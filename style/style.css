@@ -285,10 +285,20 @@ nav li a{
 
 footer{
 	background-color: #009032;
+	padding: 15px 0;
 }
-footer p{
+footer img{
+	max-height: 150px;
+}
+footer p.pull-right{
 	font-family: 'Cuprum', sans-serif;
-	font-size: 28pt;
+	font-size: 16pt;
 	color: #000;
 	margin: 15px 0;
+}
+footer a{
+	display: block;
+	color: #000;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 16pt;
 }
