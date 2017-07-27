@@ -226,6 +226,9 @@ nav li a{
 	font-family: 'Cuprum', sans-serif;
 	font-size: 24pt;
 }
+.sec6 .contactadr p{
+    font-size: 18pt !important;
+}
 .sec6 .contact img{
 	height: 50px;
 	width: 50px;
