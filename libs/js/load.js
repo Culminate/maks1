@@ -1,11 +1,13 @@
 $(document).ready(function(){
-	$.ajax({
-  		url: 'libs/js/load.html',
-  		dataType: 'text',
-  		async: false,
-  		
-  		success: function (data) {
-  		$("head").append(data);
-  		}
+	$(".num").click(function(e) {
+		$('.sec5tool').hide();
+	 	$(this).children('.sec5tool').toggle();
+	  	e.stopPropagation();
+	});
+	$('.sec5tool').click(function(e) {
+  		e.stopPropagation();
+	});
+	$(document).click(function() {
+	  	$('.sec5tool').hide();
 	});
 });

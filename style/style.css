@@ -43,7 +43,7 @@ nav li a{
 	padding: 15px 5px 15px 5px !important;
 }
 .sec1{
-	background-image: url('../img/background1.png');
+	background-image: url('../img/background1.jpg');
 	background-position: 50% 50%;
 }
 .sec1 .left{
@@ -163,8 +163,8 @@ nav li a{
 	padding: 10px;
 }
 .sec3{
-	background-image: url('../img/background2.png');
-	background-position: 50% 30%;
+	background-image: url('../img/background2.jpg');
+	background-position: 50% 35%;
 	min-height: 500px;
 }
 .sec3 img{
@@ -208,7 +208,7 @@ nav li a{
 	max-width: 970px;
 }
 .sec5{
-	background-image: url('../img/background3.png');
+	background-image: url('../img/background3.jpg');
 	background-position: 50% 30%;
 }
 .sec5 img{
@@ -216,18 +216,18 @@ nav li a{
 }
 .sec5 .num{
 	position: absolute;
-	height: 30px;
-	line-height: 30px;
-	width: 30px;
-	margin: -15px 0 0 -15px;
-	overflow: visible;
+	height: 50px;
+	width: 50px;
+	margin: -25px 0 0 -25px;
 }
 .sec5 .num .number{
 	font-family: 'Cuprum', sans-serif;
 	font-size: 20pt;
+	line-height: 50px;
 	color: #000;
 	margin: 0;
 	text-align: center;
+	z-index: 1;
 }
 .stat1 .number{
 	text-shadow: 
@@ -311,13 +311,29 @@ nav li a{
 		-2px  2px 2px #DB0000,
 		 2px  2px 2px #DB0000;
 }
-
+.stat1 .bron>strong::after{
+	content: "Забронирован";
+}
+.stat1 .info>p:last-child{
+	display: none;
+}
+.stat2 .bron>strong::after{
+	content: "Свободен";
+}
+.stat3 .bron>strong::after{
+	content: "Продан";
+}
+.stat3 .info>p:last-child{
+	display: none;
+}
 .sec5 .sec5tool{
 	width: 220px;
 	height: 100px;
 	background-color: #fff;
 	display: none;
-	margin: 7px 0 0 -95px;
+	position: relative;
+	z-index: 2;
+	margin: 7px 0 0 -70px;
 }
 .sec5 .sec5tool:before{
 	content: ' ';
@@ -325,14 +341,20 @@ nav li a{
     width: 0;
     height: 0;
     bottom: 100%;
-    left: 8px;
-    top: 23px;
+    left: 88px;
     border-width: 7px 7px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
-.sec5 .num:hover .sec5tool{
-	display: block;
+.sec5 .num:hover{
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,252,0.09) 65%, rgba(255,254,252,0) 71%); /* ff3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(65%, rgba(255,254,252,0.09)), color-stop(71%, rgba(255,254,252,0))); /* safari4+,chrome */
+	background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,252,0.09) 65%, rgba(255,254,252,0) 71%); /* safari5.1+,chrome10+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,252,0.09) 65%, rgba(255,254,252,0) 71%); /* opera 11.10+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,252,0.09) 65%, rgba(255,254,252,0) 71%); /* ie10+ */
+	background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,254,252,0.09) 65%, rgba(255,254,252,0) 71%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFEFC',GradientType=1 ); /* ie6-9 */
+	cursor: pointer;
 }
 .sec5tool .nums{
 	background-color: yellow;
@@ -351,14 +373,30 @@ nav li a{
 .sec5tool .bron{
 	padding: 0 10px;
 	margin-left: 40px;
+	line-height: 30px;
 }
 .sec5tool .info>p{
 	margin: 0 5px;
 	line-height: 20px;
 }
+.sec5 .labelfire, .sec5 .labelexit, .sec5 .labelbaby{
+	position: absolute;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 16pt;
+	color: #fff;
+	line-height: 30px;
+	margin: -15px 0 0 0;
+}
+.sec5 .labelbaby{
+	font-size: 12pt;
+	line-height: 18px;
+	margin: -10px 0 0 0;
+	text-align: center;
+}
+
 .sec6{
 	min-height: 400px;
-	background-image: url('../img/background4.png');
+	background-image: url('../img/background4.jpg');
 	background-position: 50% 50%;
 }
 .sec6 .sectitle{
@@ -435,7 +473,7 @@ footer{
 footer img{
 	max-height: 150px;
 }
-footer p.pull-right{
+footer p.text-right{
 	font-family: 'Cuprum', sans-serif;
 	font-size: 16pt;
 	color: #000;
@@ -446,4 +484,8 @@ footer a{
 	color: #000;
 	font-family: 'Cuprum', sans-serif;
 	font-size: 16pt;
+}
+
+.bit8{
+	font-family: 'Orbitron', sans-serif;
 }
