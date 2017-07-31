@@ -12,20 +12,24 @@
 $selform = 0;
 $sendto   = "bum033@yandex.ru"; // почта, на которую будет приходить письмо
 $regexphone = '/^\+?[0-9]?[0-9]{10}$/';
+$regexemail = '/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/';
+
 if (isset($_POST['InputName'])){
 	$username = $_POST['InputName'];   // сохраняем в переменную данные полученные из поля c именем
 	$usertel = $_POST['InputPhone']; // сохраняем в переменную данные полученные из поля c телефонным номером
+	$useremail = $_POST['InputEmail']; // сохраняем в переменную данные полученные из поля c email
 	$clean_number = str_replace(array(' ', '-', '(', ')', '+'), '', $usertel);
-	if (preg_match($regexphone, $clean_number) && strlen($username) > 0 && strlen($username) < 30){
+	if ((preg_match($regexphone, $clean_number) || preg_match($regexemail, $useremail)) && strlen($username) > 0 && strlen($username) < 30){
 		$selform = 1;
-}
+	}
 }
 if (isset($_POST['InputName1'])){
 	$username = $_POST['InputName1'];
 	$usertel = $_POST['InputPhone1'];
+	$useremail = $_POST['InputEmail1'];
 	$question = $_POST['Question'];
 	$clean_number = str_replace(array(' ', '-', '(', ')', '+'), '', $usertel);
-	if (preg_match($regexphone, $clean_number) && strlen($username) > 0 && strlen($username) < 30){
+	if ((preg_match($regexphone, $clean_number) || preg_match($regexemail, $useremail)) && strlen($username) > 0 && strlen($username) < 30){
 		$selform = 2;
 	}
 }
@@ -56,6 +60,7 @@ $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
 $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>".$mailheader."</h2>\r\n";
 $msg .= "<p><strong>От кого:</strong> ".$username."</p>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$usertel."</p>\r\n";
+$msg .= "<p><strong>Email:</strong> ".$useremail."</p>\r\n";
 if (isset($_POST['Question']))
 	$msg .= "<p>".$question."</p>\r\n";
 $msg .= "</body></html>";

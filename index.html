@@ -8,6 +8,7 @@
 	<meta name="description" content="Небольшой, уютный поселок на 22 участка.
 Находится в 80 км от Москвы, рядом с деревней Калянино, Ступинского района, Московской области.">
 	<meta name="viewport" content="width=240, initial-scale=0.7">
+	<meta name="yandex-verification" content="e5ef7b344624dcb4" />
 
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="	sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,6 +16,7 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+<div id="overlay"></div>
 	<header class="container-fluid">
 		<div class="container">
 			<div class="col-xs-4 col-lg-3">
@@ -46,7 +48,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-5 left">
-						<div class="form">
+						<div class="form" id="form">
 							<div class="head">
 								<p class="headtext text-center">
 									отправьте заявку и получите:
@@ -61,7 +63,10 @@
 								    <input name="InputName" type="text" class="form-control" maxlength="30" placeholder="введите ваше имя" required />
 								  </div>
 								  <div class="form-group">
-								    <input name="InputPhone" id="InputPhone" type="tel" class="form-control" maxlength="18" placeholder="ваш телефон" required pattern="\+?[0-9]?[0-9]{10}"/>
+								    <input name="InputPhone" id="InputPhone" type="tel" class="form-control" maxlength="18" placeholder="ваш телефон" pattern="^\+?[0-9]?[0-9]{10}$"/>
+								  </div>
+								  <div class="form-group">
+								    <input name="InputEmail" id="InputEmail" type="email" class="form-control" maxlength="30" placeholder="ваш email (не обязательно)" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"/>
 								  </div>
 								  <button type="submit" class="btn pull-right">отправить</button>
 								</form>
@@ -134,8 +139,9 @@
 					<img src="img/sec4.png" alt="" class="img-responsive center-block">
 				</div>
 				<div class="row secbutton">
-					<a href="#sec1" class="center-block"><p class="text-center">заказать звонок</p></a>
+					<a class="center-block"><p class="text-center">заказать звонок</p></a>
 				</div>
+				
 			</div>
 		</section>
 		<section class="sec5 container-fluid" id="sec5">
@@ -459,11 +465,14 @@
 							<p class="formlabel text-center">ЗАДАТЬ ВОПРОС</p>
 							<div class="form-group row lineinput">
 								<div class="col-xs-6">
-									<input name="InputPhone1" type="tel" class="form-control" id="InputPhone1" placeholder="телефон" required pattern="\+?[0-9]?[0-9]{10}"/>
+									<input name="InputPhone1" type="tel" class="form-control" id="InputPhone1" placeholder="телефон" pattern="^\+?[0-9]?[0-9]{10}$"/>
 								</div>
 								<div class="col-xs-6">
 									<input name="InputName1" type="text" class="form-control" id="InputName1" placeholder="имя" required />
 								</div>
+							</div>
+							<div class="form-group">
+								<input name="InputEmail1" type="email" class="form-control" id="InputEmail1" placeholder="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
 							</div>
 							<div class="form-group">
 								<textarea name="Question" class="form-control" placeholder="ваш вопрос" rows="4" required></textarea>
